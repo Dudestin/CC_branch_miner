@@ -7,8 +7,8 @@ files will be installed within `/branch_miner`
 
 # files
 ## `config.lua`
-- `WANT_BLOCK_ID`  : specify want to dig block
-- `FLUID_BLOCK_ID` : specify fluid block, program use this parameter to ignore them 
+- `WANT_BLOCK_ID`  : *table*, specify want to dig block
+- `FLUID_BLOCK_ID` : *table*, specify fluid block, program use this parameter to ignore them 
 ## `track_vein.lua`
 ### algorithm
 
