@@ -1,3 +1,5 @@
+RT_PARAM = {L = 80, W = 1}
+
 WANT_BLOCK_ID = {
   -- vanila
   'minecraft:gold_ore',

@@ -44,29 +44,26 @@ function restore_pos(s)
   end
 end
 
+function dig_until_empty()
+  while not is_in_table(TRANSPARENT_BLOCK, turtle.inspect().name) do
+    turtle.dig()
+  end
+end
+
+function digUp_until_empty()
+  while not is_in_table(TRANSPARENT_BLOCK, turte.inspectUp().name) do
+    turtle.digUp()
+  end
+end
+
+function digDown_until_empty()
+  while not is_in_table(TRANSPARENT_BLOCK, turte.inspectDown().name) do
+    turtle.digDown()
+  end
+end  
+
 -- move turtle specified pos
-function move_pos(dir)
-  local function dig_until_empty()
-    while not is_in_table(TRANSPARENT_BLOCK, turtle.inspect().name)
-    do
-      turtle.dig()
-    end
-  end
-  
-  local function digUp_until_empty()
-    while not is_in_table(TRANSPARENT_BLOCK, turte.inspectUp().name)
-    do
-      turtle.digUp()
-    end
-  end
-  
-  local function digDown_until_empty()
-    while not is_in_table(TRANSPARENT_BLOCK, turte.inspectDown().name)
-    do
-      turtle.digDown()
-    end
-  end  
-  
+function move_pos(dir)  
   s = Stack:new()
   fn_table = {
     'FORWARD' = function(s) dig_until_empty() move_fn['forward'](s) end,
