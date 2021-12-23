@@ -47,7 +47,6 @@ function inspect_dir(dir)
   return r
 end
 
-
 -- move function table
 move_fn = {
   up = turtle.up(),
