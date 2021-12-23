@@ -5,7 +5,7 @@ dofile('branch_miner/config.lua')
 -- define mine routing
 function route_mine()
   local function route_line(len)
-    for i=1, len then
+    for i=1, len do
       turtle.dig_until_empty()
       turtle.forward()
       track_vein(0)
