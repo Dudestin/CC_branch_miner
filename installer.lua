@@ -9,7 +9,7 @@ else
   fs.makeDir(TGT_DIR)
 end
 
-if not http.request('https://github.com/Dudestin/hogehge') -- TODO then
+if not http.request('https://github.com/Dudestin/hogehge') then -- TODO then
   error("couldn't conect to the servers for download")
 end
 
