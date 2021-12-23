@@ -9,7 +9,7 @@ else
   fs.makeDir(TGT_DIR)
 end
 
-if not http.request('https://github.com/Dudestin/hogehge') then -- TODO then
+if not http.request('https://gist.github.com/Dudestin/7527c71c7166c13e02f627f694a0f700') then
   error("couldn't conect to the servers for download")
 end
 
@@ -22,7 +22,7 @@ local filenames = {
   'main.lua'
 }
 
-local baseurl = "https://raw.githuibusercontent.com/Dudestin/" -- TODO
+local baseurl = "https://gist.github.com/Dudestin/7527c71c7166c13e02f627f694a0f700/raw/" -- TODO
 
 print('downloading CC_branch_miner from github')
 
