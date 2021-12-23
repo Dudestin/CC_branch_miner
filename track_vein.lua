@@ -1,8 +1,8 @@
 function make_tracklist(level)
   if level == 0 then
-    return {'up', 'down', 'right', 'left'}
+    return {'UP', 'DOWN', 'RIGHT', 'LEFT'}
   else 
-    return {'forward', 'up', 'down', 'right', 'left'}
+    return {'FORWARD', 'UP', 'DOWN', 'RIGHT', 'LEFT'}
   end
 end
 
