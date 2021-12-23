@@ -38,7 +38,7 @@ WANT_BLOCK_ID = {
   'modern_industrialization:deepslate_bauxite_ore'
 }
 
-FLUID_BLOCK_ID = {
+TRANSPARENT_BLOCK_ID = {
   'minecraft:water',
   'minecraft:lava'
 }
