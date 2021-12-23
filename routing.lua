@@ -1,3 +1,7 @@
+dofile('branch_miner/utility.lua')
+dofile('branch_miner/track_vein.lua')
+dofile('branch_miner/config.lua')
+
 -- define mine routing
 function route_mine()
   local function route_line(len)

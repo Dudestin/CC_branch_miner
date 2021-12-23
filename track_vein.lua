@@ -1,3 +1,6 @@
+dofile('branch_miner/utility.lua')
+dofile('branch_mienr/config.lua')
+
 function make_tracklist(level)
   if level == 0 then
     return {'UP', 'DOWN', 'RIGHT', 'LEFT'}

@@ -1,3 +1,6 @@
+Stack = dofile('branch_miner/stack.lua')
+dofile('branch_miner/config.lua')
+
 -- inventory iterator
 -- return match name slot id
 -- usage : for k,v in coroutine.wrap(inv_iter(hoge))
