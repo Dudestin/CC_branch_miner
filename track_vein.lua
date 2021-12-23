@@ -1,5 +1,5 @@
 dofile('branch_miner/utility.lua')
-dofile('branch_mienr/config.lua')
+dofile('branch_miner/config.lua')
 
 function make_tracklist(level)
   if level == 0 then
