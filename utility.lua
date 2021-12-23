@@ -73,8 +73,8 @@ function move_pos(dir)
     'back' = function(s) move_fn['back'](s) end,
     'up'   = function(s) digUp_until_empty() move_fn['up'](s) end,
     'down' = function(s) digDown_until_empty() move_fn['down'](s) end,
-    'right'= function(s) move_fn['right'](s) dig_until_empty() move_fn['forward'](s) end,
-    'left' = function(s) move_fn['left'](s)  dig_until_empty() move_fn['forward'](s) end
+    'right'= function(s) move_fn['turnRight'](s) dig_until_empty() move_fn['forward'](s) end,
+    'left' = function(s) move_fn['turnLeft'](s)  dig_until_empty() move_fn['forward'](s) end
   }
   assert(fn_table[dir], 'function move_pos() occurs an error, invalid arguments')
   fn_table[dir](s)
@@ -85,11 +85,11 @@ function inspect_pos(dir)
   s = Stack:new()
   fn_table = {
     'forward' = function(s) return turtle.inspect() end,
-    'back' = function(s) move_fn['right'](s) move_fn['right'](s) return turtle.inspect() end,
+    'back' = function(s) move_fn['turnRight'](s) move_fn['turnRight'](s) return turtle.inspect() end,
     'up' = function(s) return turtle.inspectUp() end,
     'down' = function(s) return turtle.inspectDown() end,
-    'right' = function(s) move_fn['right'](s) return turtle.inspect() end,
-    'left' = function(s) move_fn['left'](s) return turtle.inspect() end
+    'right' = function(s) move_fn['turnRight'](s) return turtle.inspect() end,
+    'left' = function(s) move_fn['turnLeft'](s) return turtle.inspect() end
   }
   assert(fn_table[dir], 'function inspect_dir() occurs an error, invalid arguments')
   r = fn_table[dir](s)
