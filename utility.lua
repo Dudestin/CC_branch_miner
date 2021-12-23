@@ -49,12 +49,12 @@ end
 
 -- move function table
 move_fn = {
-  up = turtle.up(),
-  down = turtle.down(),
-  turnLeft = turtle.turnLeft(),
-  turnRight = turtle.turnRight(),
-  forward = turtle.forward(),
-  back = turtle.back()
+  up = function(stack) turtle.up() stack:push('up') end,
+  down = function(stack) turtle.down() stack:push('down') end,
+  turnLeft = function(stack) turtle.turnLeft() stack:push('turnLeft') end,
+  turnRight = function(stack) turtle.turnRight() stack:push('turnRight') end,
+  forward = function(stack) turtle.forward() stack:push('forward') end,
+  back = function(stack) turtle.back() stack:push('back') end
 }
 
 -- opposite move function table
@@ -69,14 +69,48 @@ o_move_fn = {
 
 -- move turtle specify direction 
 function move_dir(dir)
+  local function dig_until_empty()
+    while not is_in_table(FLUID_BLOCK, turtle.inspect().name)
+    do
+      turtle.dig()
+    end
+  end
+  
+  local function digUp_until_empty()
+    while not is_in_table(FLUID_BLOCK, turte.inspectUp().name)
+    do
+      turtle.digUp()
+    end
+  end
+  
+  local function digDown_until_empty()
+    while not is_in_table(FLUID_BLOCK, turte.inspectDown().name)
+    do
+      turtle.digDown()
+    end
+  end  
+  
   s = Stack.new()
+  
   if (dir == 'forward') then
     dig_until_empty()
-    turtle.forward()
-    s:push('forward')
+    move_fn[dir](s)
   elseif (dir == 'back') then
-    turtle.back()
-    s:push('back')
+    move_fn[dir](s)
   elseif (dir == 'up') then
-    
+    digUp_until_empty()
+    move_fn[dir](s)
+  elseif (dir == 'down') then
+    digDown_until_empty()
+    move_fn[dir](s)
+  elseif (dir == 'right') then
+    move_fn['right'](s)
+    turtle.dig_until_empty()
+    move_fn['forward'](s)
+  elseif (dir == 'left') then
+    move_fn['left'](s)
+    turtle.dig_until_empty()
+    move_fn['forward'](s)
+  end
+  return s
 end
