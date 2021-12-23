@@ -48,19 +48,19 @@ function restore_pos(s)
 end
 
 function dig_until_empty()
-  while not(is_in_table(TRANSPARENT_BLOCK, turtle.inspect().name)) do
+  while not(is_in_table(TRANSPARENT_BLOCK, inspect_pos('FORWARD').name)) do
     turtle.dig()
   end
 end
 
 function digUp_until_empty()
-  while not(is_in_table(TRANSPARENT_BLOCK, turte.inspectUp().name)) do
+  while not(is_in_table(TRANSPARENT_BLOCK, inspect_pos('UP').name)) do
     turtle.digUp()
   end
 end
 
 function digDown_until_empty()
-  while not(is_in_table(TRANSPARENT_BLOCK, turte.inspectDown().name)) do
+  while not(is_in_table(TRANSPARENT_BLOCK, inspect_pos('DOWN').name)) do
     turtle.digDown()
   end
 end  
@@ -92,7 +92,7 @@ function inspect_pos(dir)
     LEFT = function(s) move_fn['turnLeft'](s) return turtle.inspect() end
   }
   assert(fn_table[dir], 'function inspect_dir() occurs an error, invalid arguments')
-  r = fn_table[dir](s)
+  r1, r2 = fn_table[dir](s)
   restore_pos(s)
-  return r
+  return r1, r2
 end
