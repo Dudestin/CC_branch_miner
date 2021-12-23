@@ -21,14 +21,14 @@ end
 
 -- inspect specify direction
 function inspect_dir(dir)
+  s = Stack:new()
   if (dir == 'forward') then
     r = turtle.inspect()
   elseif (dir == 'back') then
-    turtle.turnRight()
-    turtle.turnRight()
+    move_fn['right'](s)
+    move_fn['right'](s)
     r = turtle.inspect()
-    turtle.turnLeft()
-    turtle.turnLeft()
+    restore_pos(s)
   elseif (dir == 'up') then
     r = turtle.inspectUp()
   elseif (dir == 'down') then
@@ -66,6 +66,17 @@ o_move_fn = {
   forward = turtle.back(),
   back = turtle.forward()
 }
+
+inspect_fn = {
+  up = function(stack) turtle.  
+  
+}
+
+function restore_pos(s)
+  for i in stack.iterate(true) do
+    o_move_fn[i]()
+  end
+end
 
 -- move turtle specify direction 
 function move_dir(dir)
