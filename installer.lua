@@ -15,6 +15,7 @@ end
 
 local filenames = {
   'utility.lua',
+  'stack.lua',
   'config.lua',
   'track_vein.lua',
   'routing.lua',
