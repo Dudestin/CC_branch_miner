@@ -11,7 +11,7 @@ end
 
 function track_vein(level)
   for k, dir in pairs(make_tracklist(level)) do
-    if is_in_table(WANT_BLOCK_ID, -- TODO inspect_pos(dir).name) then --need to dig them ?
+    if is_in_table(WANT_BLOCK_ID, inspect_pos(dir).name) then --need to dig them ?
       move_stack = move(dir)
       track_vein(level + 1)  -- recursive call
       restore_pos(move_stack)
