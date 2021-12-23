@@ -16,6 +16,7 @@ function track_vein(level)
       track_vein(level + 1)  -- recursive call
       if move_stack then
         restore_pos(move_stack)
+      end
     end
   end
 end
