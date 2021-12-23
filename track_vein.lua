@@ -8,10 +8,10 @@ end
 
 function track_vein(level)
   for k, dir in pairs(make_tracklist(level)) do
-    if is_in_table(NEED_TRACK, inspect_pos(dir).name) then
+    if is_in_table(NEED_TRACK, inspect_pos(dir).name) then --need to dig them ?
       move_stack = move(dir)
-      track_vein(level + 1)
+      track_vein(level + 1)  -- recursive call
+      restore_pos(move_stack)
     end
   end
-  backmove(move_stack)
 end
