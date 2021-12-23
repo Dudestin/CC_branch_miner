@@ -18,35 +18,6 @@ function is_in_table(table, value)
   return false
 end
 
-
--- inspect specify direction
-function inspect_dir(dir)
-  s = Stack:new()
-  if (dir == 'forward') then
-    r = turtle.inspect()
-  elseif (dir == 'back') then
-    move_fn['right'](s)
-    move_fn['right'](s)
-    r = turtle.inspect()
-    restore_pos(s)
-  elseif (dir == 'up') then
-    r = turtle.inspectUp()
-  elseif (dir == 'down') then
-    r = turtle.inspectDown()
-  elseif (dir == 'right') then
-    turtle.turnRight()
-    r = turtle.inspect()
-    turtle.turnLeft()
-  elseif (dir == 'left') then
-    turtle.turnLeft()
-    r = turtle.inspect()
-    turtle.turnRight()
-  else
-    error("utility.lua : function inspect(direction) get invalid argument.")
-  end
-  return r
-end
-
 -- move function table
 move_fn = {
   up = function(stack) turtle.up() stack:push('up') end,
@@ -67,61 +38,61 @@ o_move_fn = {
   back = turtle.forward()
 }
 
-inspect_fn = {
-  up = function(stack) turtle.  
-  
-}
-
 function restore_pos(s)
-  for i in stack.iterate(true) do
-    o_move_fn[i]()
+  for k, v in s:iterate(true) do
+    o_move_fn[v]()
   end
 end
 
--- move turtle specify direction 
-function move_dir(dir)
+-- move turtle specified pos
+function move_pos(dir)
   local function dig_until_empty()
-    while not is_in_table(FLUID_BLOCK, turtle.inspect().name)
+    while not is_in_table(TRANSPARENT_BLOCK, turtle.inspect().name)
     do
       turtle.dig()
     end
   end
   
   local function digUp_until_empty()
-    while not is_in_table(FLUID_BLOCK, turte.inspectUp().name)
+    while not is_in_table(TRANSPARENT_BLOCK, turte.inspectUp().name)
     do
       turtle.digUp()
     end
   end
   
   local function digDown_until_empty()
-    while not is_in_table(FLUID_BLOCK, turte.inspectDown().name)
+    while not is_in_table(TRANSPARENT_BLOCK, turte.inspectDown().name)
     do
       turtle.digDown()
     end
   end  
   
-  s = Stack.new()
-  
-  if (dir == 'forward') then
-    dig_until_empty()
-    move_fn[dir](s)
-  elseif (dir == 'back') then
-    move_fn[dir](s)
-  elseif (dir == 'up') then
-    digUp_until_empty()
-    move_fn[dir](s)
-  elseif (dir == 'down') then
-    digDown_until_empty()
-    move_fn[dir](s)
-  elseif (dir == 'right') then
-    move_fn['right'](s)
-    turtle.dig_until_empty()
-    move_fn['forward'](s)
-  elseif (dir == 'left') then
-    move_fn['left'](s)
-    turtle.dig_until_empty()
-    move_fn['forward'](s)
-  end
-  return s
+  s = Stack:new()
+  fn_table = {
+    'forward'=function(s) dig_until_empty() move_fn['forward'](s) end,
+    'back' = function(s) move_fn['back'](s) end,
+    'up'   = function(s) digUp_until_empty() move_fn['up'](s) end,
+    'down' = function(s) digDown_until_empty() move_fn['down'](s) end,
+    'right'= function(s) move_fn['right'](s) dig_until_empty() move_fn['forward'](s) end,
+    'left' = function(s) move_fn['left'](s)  dig_until_empty() move_fn['forward'](s) end
+  }
+  assert(fn_table[dir], 'function move_pos() occurs an error, invalid arguments')
+  fn_table[dir](s)
+end
+
+-- inspect specified pos
+function inspect_pos(dir)
+  s = Stack:new()
+  fn_table = {
+    'forward' = function(s) return turtle.inspect() end,
+    'back' = function(s) move_fn['right'](s) move_fn['right'](s) return turtle.inspect() end,
+    'up' = function(s) return turtle.inspectUp() end,
+    'down' = function(s) return turtle.inspectDown() end,
+    'right' = function(s) move_fn['right'](s) return turtle.inspect() end,
+    'left' = function(s) move_fn['left'](s) return turtle.inspect() end
+  }
+  assert(fn_table[dir], 'function inspect_dir() occurs an error, invalid arguments')
+  r = fn_table[dir](s)
+  restore_pos(s)
+  return r
 end
