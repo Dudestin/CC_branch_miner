@@ -42,5 +42,6 @@ WANT_BLOCK_ID = {
 
 TRANSPARENT_BLOCK_ID = {
   'minecraft:water',
-  'minecraft:lava'
+  'minecraft:lava',
+  'NO_BLOCK'
 }

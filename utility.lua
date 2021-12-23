@@ -94,5 +94,7 @@ function inspect_pos(dir)
   assert(fn_table[dir], 'function inspect_dir() occurs an error, invalid arguments')
   r1, r2 = fn_table[dir](s)
   restore_pos(s)
-  return r2
+  if r1 then
+    return r2
+  return "NO_BLOCK"
 end
