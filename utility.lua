@@ -96,5 +96,6 @@ function inspect_pos(dir)
   restore_pos(s)
   if r1 then
     return r2
+  end
   return "NO_BLOCK"
 end
