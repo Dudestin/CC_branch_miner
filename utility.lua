@@ -33,12 +33,12 @@ move_fn = {
 
 -- opposite move function table
 o_move_fn = {
-  up = turtle.down(),
-  down = turtle.up(),
-  turnLeft = turtle.turnRight(),
-  turnRight = turtle.turnLeft(),
-  forward = turtle.back(),
-  back = turtle.forward()
+  up = function() turtle.down() end,
+  down = function() turtle.up() end,
+  turnLeft = function() turtle.turnRight() end,
+  turnRight = function() turtle.turnLeft() end,
+  forward = function() turtle.back() end,
+  back = function() turtle.forward() end
 }
 
 function restore_pos(s)
