@@ -97,5 +97,5 @@ function inspect_pos(dir)
   if r1 then
     return r2
   end
-  return "NO_BLOCK"
+  return {name = "NO_BLOCK"}
 end
