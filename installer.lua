@@ -30,7 +30,7 @@ for i=1, #filenames do
   local filedata = http.get(baseurl .. filenames[i])
   
   print('downloading ' .. filenames[i] .. "...")
-  local file = fs.open(TGT_DIR .. '/' ..filenames[i]:sub(1, -5), "w")
+  local file = fs.open(TGT_DIR .. '/' .. filenames[i], "w")
   file.write(filedata.readAll())
   file.close()
 end
