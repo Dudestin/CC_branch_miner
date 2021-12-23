@@ -48,19 +48,19 @@ function restore_pos(s)
 end
 
 function dig_until_empty()
-  while not is_in_table(TRANSPARENT_BLOCK, turtle.inspect().name) do
+  while not(is_in_table(TRANSPARENT_BLOCK, turtle.inspect().name)) do
     turtle.dig()
   end
 end
 
 function digUp_until_empty()
-  while not is_in_table(TRANSPARENT_BLOCK, turte.inspectUp().name) do
+  while not(is_in_table(TRANSPARENT_BLOCK, turte.inspectUp().name)) do
     turtle.digUp()
   end
 end
 
 function digDown_until_empty()
-  while not is_in_table(TRANSPARENT_BLOCK, turte.inspectDown().name) do
+  while not(is_in_table(TRANSPARENT_BLOCK, turte.inspectDown().name)) do
     turtle.digDown()
   end
 end  
