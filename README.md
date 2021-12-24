@@ -1,6 +1,6 @@
 # how to use
 ```sh
-$ wget hogehog -o installer.lua 
+$ wget https://gist.github.com/Dudestin/7527c71c7166c13e02f627f694a0f700/raw/installer.lua 
 $ ./installer.lua
 ```
 files will be installed within `/branch_miner`
