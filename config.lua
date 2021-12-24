@@ -12,7 +12,6 @@ WANT_BLOCK_ID = {
   'minecraft:lit_redstone_ore',
   'minecraft:emerald_ore',
   'minecraft:quartz_ore',
-  
   'minecraft:deepslate_gold_ore',
   'minecraft:deepslate_iron_ore',
   'minecraft:deepslate_copper_ore',
@@ -22,20 +21,16 @@ WANT_BLOCK_ID = {
   'minecraft:deepslate_redstone_ore',
   'minecraft:deepslate_lit_redstone_ore',
   'minecraft:deepslate_emerald_ore',
-  
   -- applied energistics
   'appliedenergistics2:quartz_ore',
-  
   -- techreborn
   'techreborn:sapphire_ore',
   'techreborn:ruby_ore',
   'techreborn:peridot_ore',
   'techreborn:galena_ore',
-  
   -- industrial revolution
   'indrev:nikolite_ore',
   'indrev:deepslate_nikolite_ore',
-  
   -- modern industrialization
   'modern_industrialization:lead_ore',
   'modern_industrialization:silver_ore',
@@ -49,7 +44,6 @@ WANT_BLOCK_ID = {
   'modern_industrialization:antimony_ore',
   'modern_industrialization:nickel_ore',
   'modern_industrialization:lignite_coal_ore',
-
   'modern_industrialization:deepslate_lead_ore',
   'modern_industrialization:deepslate_silver_ore',
   'modern_industrialization:deepslate_tin_ore',
@@ -75,7 +69,6 @@ WANT_ITEM_ID = {
   'minecraft:coal',
   'minecraft:emerald',
   'minecraft:bucket',
-  
   -- modern industrialization
   'modern_industrialization:raw_lead',
   'modern_industrialization:raw_silver',
@@ -89,16 +82,13 @@ WANT_ITEM_ID = {
   'modern_industrialization:raw_antimony',
   'modern_industrialization:raw_nickel',
   'modern_industrialization:lignite_coal',
-  
   -- techreborn
   'techreborn:sapphire_gem',
   'techreborn:ruby_gem',
   'techreborn:peridot_gem',
   'techreborn:galena_ore',
-  
   -- applied energistics 2
   'appliedenergistics2:certus_quartz_dust',
-  
   -- industrial revolution
   'indrev:nikolite_dust',
   'indrev:sulfur_crystal'

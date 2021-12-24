@@ -118,4 +118,5 @@ function try_refuel()
     if turtle.getFuelLevel() >= turtle.getFuelLimit() then
       break
     end
+  end
 end
