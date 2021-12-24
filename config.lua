@@ -1,7 +1,7 @@
 RT_PARAM = {L = 20, W = 2, N = 20}
 
 WANT_BLOCK_ID = {
-  -- vanila
+  -- vannila
   'minecraft:gold_ore',
   'minecraft:iron_ore',
   'minecraft:coal_ore',
