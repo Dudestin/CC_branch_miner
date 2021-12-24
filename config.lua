@@ -31,10 +31,7 @@ WANT_BLOCK_ID = {
   
   -- industrial revolution
   'indrev:nikolite_ore',
-  'indrev:silver_ore',
-  
   'indrev:deepslate_nikolite_ore',
-  'indrev:deepslate_silver_ore',
   
   -- modern industrialization
   'modern_industrialization:lignite_coal_ore',
@@ -42,12 +39,14 @@ WANT_BLOCK_ID = {
   'modern_industrialization:bauxite_ore',
   'modern_industrialization:tin_ore',
   'modern_industrialization:lead_ore',
+  'modern_industiralization:silver_ore',
   
   'modern_industrialization:deepslate_lignite_coal_ore',
   'modern_industrialization:deepslate_tungsten_ore',
   'modern_industrialization:deepslate_bauxite_ore',
   'modern_industrialization:deepslate_tin_ore',
-  'modern_industrialization:deepslate_lead_ore'
+  'modern_industrialization:deepslate_lead_ore',
+  'modern_industrialization:deepslate_silver_ore'
 }
 
 WANT_ITEM_ID = {
