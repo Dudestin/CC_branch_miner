@@ -39,11 +39,13 @@ WANT_BLOCK_ID = {
   'modern_industrialization:tungsten_ore',
   'modern_industrialization:bauxite_ore',
   'modern_industrialization:tin_ore',
+  'modern_industrialization:lead_ore',
   
   'modern_industrialization:deepslate_lignite_coal_ore',
   'modern_industrialization:deepslate_tungsten_ore',
+  'modern_industrialization:deepslate_bauxite_ore',
   'modern_industrialization:deepslate_tin_ore',
-  'modern_industrialization:deepslate_bauxite_ore'
+  'modern_industrialization:deepslate_lead_ore'
 }
 
 WANT_ITEM_ID = {
@@ -56,6 +58,7 @@ WANT_ITEM_ID = {
   'minecraft:lapis_lazuli',
   'minecraft:coal',
   'minecraft:emerald',
+  'minecraft:bucket',
   -- modern industrialization
   'modern_industrialization:raw_lead',
   'modern_industrialization:raw_silver',
@@ -65,10 +68,19 @@ WANT_ITEM_ID = {
   'modern_industrialization:raw_platinum',
   'modern_industrialization:mozanite_dust',
   'modern_industrialization:raw_antimony',
+  -- techreborn
   'techreborn:sapphire_gem',
   'techreborn:ruby_gem',
   -- applied energistics 2
-  'appliedenergistics2:certus_quartz_dust'
+  'appliedenergistics2:certus_quartz_dust',
+  -- industrial revolution
+  'indrev:nikolite_dust'
+}
+
+FUEL_ITEM_ID = {
+  'minecraft:lava_bucket',
+  'minecraft:coal',
+  'minecraft:charcoal'
 }
 
 TRANSPARENT_BLOCK_ID = {
