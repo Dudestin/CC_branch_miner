@@ -103,10 +103,19 @@ end
 function drop_trash()
   for i=1, 16 do
     turtle.select(i)
-    t
+    if not(is_in_table(WANT_ITEM_ID, turtle.getItemDetail().name)) then -- if "trash"
+      turtle.drop()
+    end
   end
 end
 
 function try_refuel()
-  
+  for i=1, 16 do 
+    turtle.select(i)
+    if is_in_table(FUEL_ITEM_ID, turtle.getItemDetail().name) then
+      turtle.refuel()
+    end
+    if turtle.getFuelLevel() >= turtle.getFuelLimit() then
+      break;
+    end
 end
