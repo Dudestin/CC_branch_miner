@@ -67,14 +67,14 @@ end
 
 -- move turtle specified pos
 function move_pos(dir)  
-  s = Stack:new()
-  fn_table = {
+  local s = Stack:new()
+  local fn_table = {
     FORWARD = function(s) dig_until_empty() return move_fn['forward'](s) end,
     BACK = function(s) return move_fn['back'](s) end,
     UP   = function(s) digUp_until_empty() return move_fn['up'](s) end,
     DOWN = function(s) digDown_until_empty() return move_fn['down'](s) end,
-    RIGHT= function(s) s = move_fn['turnRight'](s) dig_until_empty() return move_fn['forward'](s) end,
-    LEFT = function(s) s = move_fn['turnLeft'](s)  dig_until_empty() return move_fn['forward'](s) end
+    RIGHT= function(s) local s = move_fn['turnRight'](s) dig_until_empty() return move_fn['forward'](s) end,
+    LEFT = function(s) local s = move_fn['turnLeft'](s)  dig_until_empty() return move_fn['forward'](s) end
   }
   assert(fn_table[dir], 'function move_pos() occurs an error, invalid arguments')
   return fn_table[dir](s)
@@ -82,17 +82,17 @@ end
 
 -- inspect specified pos
 function inspect_pos(dir)
-  s = Stack:new()
-  fn_table = {
+  local s = Stack:new()
+  local fn_table = {
     FORWARD = function(s) return s, turtle.inspect() end,
-    BACK = function(s) s = move_fn['turnRight'](s) return move_fn['turnRight'](s), turtle.inspect() end,
+    BACK = function(s) local s = move_fn['turnRight'](s) return move_fn['turnRight'](s), turtle.inspect() end,
     UP   = function(s) return s, turtle.inspectUp() end,
     DOWN = function(s) return s, turtle.inspectDown() end,
     RIGHT= function(s) return move_fn['turnRight'](s), turtle.inspect() end,
     LEFT = function(s) return move_fn['turnLeft'](s),  turtle.inspect() end
   }
   assert(fn_table[dir], 'function inspect_dir() occurs an error, invalid arguments')
-  s, r1, r2 = fn_table[dir](s)
+  local s, r1, r2 = fn_table[dir](s)
   restore_pos(s)
   if r1 then
     return r2
