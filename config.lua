@@ -34,19 +34,31 @@ WANT_BLOCK_ID = {
   'indrev:deepslate_nikolite_ore',
   
   -- modern industrialization
-  'modern_industrialization:lignite_coal_ore',
-  'modern_industrialization:tungsten_ore',
-  'modern_industrialization:bauxite_ore',
-  'modern_industrialization:tin_ore',
   'modern_industrialization:lead_ore',
   'modern_industiralization:silver_ore',
-  
-  'modern_industrialization:deepslate_lignite_coal_ore',
-  'modern_industrialization:deepslate_tungsten_ore',
-  'modern_industrialization:deepslate_bauxite_ore',
-  'modern_industrialization:deepslate_tin_ore',
+  'modern_industrialization:tin_ore',
+  'modern_industrialization:tungsten_ore',
+  'modern_industrialization:uranium_ore',
+  'modern_industrialization:titanium_ore',
+  'modern_industrialization:bauxite_ore',
+  'modern_industrialization:platinum_ore',
+  'modern_industrialization:mozanite_ore',
+  'modern_industrialization:antimony_ore',
+  'modern_industrialization:nickel_ore',
+  'modern_industrialization:lignite_coal_ore',
+
   'modern_industrialization:deepslate_lead_ore',
-  'modern_industrialization:deepslate_silver_ore'
+  'modern_industiralization:deepslate_silver_ore',
+  'modern_industrialization:deepslate_tin_ore',
+  'modern_industrialization:deepslate_tungsten_ore',
+  'modern_industrialization:deepslate_uranium_ore',
+  'modern_industrialization:deepslate_titanium_ore',
+  'modern_industrialization:deepslate_bauxite_ore',
+  'modern_industrialization:deepslate_platinum_ore',
+  'modern_industrialization:deepslate_mozanite_ore',
+  'modern_industrialization:deepslate_antimony_ore',
+  'modern_industrialization:deepslate_nickel_ore',
+  'modern_industrialization:deepslate_lignite_coal_ore'
 }
 
 WANT_ITEM_ID = {
