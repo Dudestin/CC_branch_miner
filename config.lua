@@ -45,6 +45,31 @@ WANT_BLOCK_ID = {
   'modern_industrialization:deepslate_bauxite_ore'
 }
 
+WANT_ITEM_ID = {
+  -- vannila
+  'minecraft:diamond',
+  'minecraft:raw_gold',
+  'minecraft:raw_iron',
+  'minecraft:raw_copper',
+  'minecraft:redstone',
+  'minecraft:lapis_lazuli',
+  'minecraft:coal',
+  'minecraft:emerald',
+  -- modern industrialization
+  'modern_industrialization:raw_lead',
+  'modern_industrialization:raw_silver',
+  'modern_industrialization:raw_tin',
+  'modern_industrialization:raw_tungsten',
+  'modern_industrialization:bauxite_dust',
+  'modern_industrialization:raw_platinum',
+  'modern_industrialization:mozanite_dust',
+  'modern_industrialization:raw_antimony',
+  'techreborn:sapphire_gem',
+  'techreborn:ruby_gem',
+  -- applied energistics 2
+  'appliedenergistics2:certus_quartz_dust'
+}
+
 TRANSPARENT_BLOCK_ID = {
   'minecraft:water',
   'minecraft:lava',
