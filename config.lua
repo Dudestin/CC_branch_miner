@@ -4,6 +4,7 @@ WANT_BLOCK_ID = {
   -- vannila
   'minecraft:gold_ore',
   'minecraft:iron_ore',
+  'minecraft:copper_ore',
   'minecraft:coal_ore',
   'minecraft:lapis_ore',
   'minecraft:diamond_ore',
