@@ -15,6 +15,7 @@ $ ./main.lua [L] [W] [N]
 # files
 ## `config.lua`
 - `RT_PARAM` : *table*, routing parameters. `L` : base-mine length, `W` : round-trip interval
+- `REFUEL_THRESHOLD` : *integer*, turtle will refuel when fuel-level is less than this value. 
 - `WANT_BLOCK_ID`  : *table*, specify want to dig block
 - `WANT_ITEM_ID`   : *table*, specify want item id, turtle will drop any item without these.
 - `FUEL_ITEM_ID`   : *table*, specify turtle's fuel compatible item, turtle will use these item to refuel.
