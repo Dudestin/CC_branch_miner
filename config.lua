@@ -1,4 +1,4 @@
-RT_PARAM = {L = 80, W = 1}
+RT_PARAM = {L = 20, W = 2, N = 20}
 
 WANT_BLOCK_ID = {
   -- vanila

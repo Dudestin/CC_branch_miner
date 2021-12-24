@@ -1,10 +1,17 @@
-# how to use
+# install
 ```sh
 $ wget https://gist.github.com/Dudestin/7527c71c7166c13e02f627f694a0f700/raw/installer.lua 
 $ ./installer.lua
 ```
 files will be installed within `/branch_miner`
 
+# how to use
+```sh
+$ ./main.lua [L] [W] [N]
+```
+- `L` : length of the side-mine, *default : 80*
+- `W` : interval of side-mine, *default : 2*
+- `N` : number of side-mine, must be an **even number**,  *default : 20*
 # files
 ## `config.lua`
 - `RT_PARAM` : *table*, routing parameters. `L` : base-mine length, `W` : round-trip interval
