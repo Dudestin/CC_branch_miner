@@ -23,6 +23,7 @@ WANT_BLOCK_ID = {
   'minecraft:deepslate_emerald_ore',
   -- applied energistics
   'appliedenergistics2:quartz_ore',
+  'appliedenergistics2:deepslate_quartz_ore',
   -- techreborn
   'techreborn:sapphire_ore',
   'techreborn:ruby_ore',
