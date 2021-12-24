@@ -13,6 +13,9 @@ files will be installed within `/branch_miner`
 ## `track_vein.lua`
 鉱脈 (vein) 追跡関数
 ### algorithm
+using depth-first search (DFS). 
+![track_vein_tree](https://user-images.githubusercontent.com/11572379/147317099-0ef03911-7942-422e-bda1-d409fc9311c1.png)
+
 ## `routing.lua`
 
 ## `utility.lua`
