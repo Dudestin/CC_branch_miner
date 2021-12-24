@@ -20,14 +20,19 @@ WANT_BLOCK_ID = {
   'minecraft:deepslate_redstone_ore',
   'minecraft:deepslate_lit_redstone_ore',
   'minecraft:deepslate_emerald_ore',
+  
   -- applied energistics
+  
   -- techreborn
   'techreborn:galena_ore',
+  
   -- industrial revolution
   'indrev:nikolite_ore',
-  'indrev:deepslate_nikolite_ore',
   'indrev:silver_ore',
+  
+  'indrev:deepslate_nikolite_ore',
   'indrev:deepslate_silver_ore',
+  
   -- modern industrialization
   'modern_industrialization:lignite_coal_ore',
   'modern_industrialization:tungsten_ore',
