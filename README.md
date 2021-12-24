@@ -16,6 +16,8 @@ $ ./main.lua [L] [W] [N]
 ## `config.lua`
 - `RT_PARAM` : *table*, routing parameters. `L` : base-mine length, `W` : round-trip interval
 - `WANT_BLOCK_ID`  : *table*, specify want to dig block
+- `WANT_ITEM_ID`   : *table*, specify want item id, turtle will drop any item without these.
+- `FUEL_ITEM_ID`   : *table*, specify turtle's fuel compatible item, turtle will use these item to refuel.
 - `TRANSPARENT_BLOCK_ID` : *table*, specify transparent block, program use this parameter to ignore them 
 ## `track_vein.lua`
 鉱脈 (vein) 追跡関数
