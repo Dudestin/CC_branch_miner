@@ -15,6 +15,19 @@ files will be installed within `/branch_miner`
 ### algorithm
 using depth-first search (DFS). 
 ![track_vein_tree](https://user-images.githubusercontent.com/11572379/147317099-0ef03911-7942-422e-bda1-d409fc9311c1.png)
+```lua
+function track_vein(level)
+  for k, dir in pairs(make_tracklist(level)) do
+    if is_in_table(WANT_BLOCK_ID, inspect_pos(dir).name) then --need to dig them ?
+      local move_stack = move_pos(dir)
+      track_vein(level + 1)  -- recursive call
+      if move_stack then
+        restore_pos(move_stack)
+      end
+    end
+  end
+end
+```
 
 ## `routing.lua`
 
