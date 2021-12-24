@@ -38,7 +38,7 @@ WANT_BLOCK_ID = {
   
   -- modern industrialization
   'modern_industrialization:lead_ore',
-  'modern_industiralization:silver_ore',
+  'modern_industrialization:silver_ore',
   'modern_industrialization:tin_ore',
   'modern_industrialization:tungsten_ore',
   'modern_industrialization:uranium_ore',
@@ -51,7 +51,7 @@ WANT_BLOCK_ID = {
   'modern_industrialization:lignite_coal_ore',
 
   'modern_industrialization:deepslate_lead_ore',
-  'modern_industiralization:deepslate_silver_ore',
+  'modern_industrialization:deepslate_silver_ore',
   'modern_industrialization:deepslate_tin_ore',
   'modern_industrialization:deepslate_tungsten_ore',
   'modern_industrialization:deepslate_uranium_ore',
