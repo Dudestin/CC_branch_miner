@@ -21,9 +21,7 @@ function track_vein(level)
     if is_in_table(WANT_BLOCK_ID, inspect_pos(dir).name) then --need to dig them ?
       local move_stack = move_pos(dir)
       track_vein(level + 1)  -- recursive call
-      if move_stack then
-        restore_pos(move_stack)
-      end
+      restore_pos(move_stack)
     end
   end
 end
