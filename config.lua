@@ -27,6 +27,9 @@ WANT_BLOCK_ID = {
   'appliedenergistics2:quartz_ore',
   
   -- techreborn
+  'techreborn:sapphire_ore',
+  'techreborn:ruby_ore',
+  'techreborn:peridot_ore',
   'techreborn:galena_ore',
   
   -- industrial revolution
@@ -72,6 +75,7 @@ WANT_ITEM_ID = {
   'minecraft:coal',
   'minecraft:emerald',
   'minecraft:bucket',
+  
   -- modern industrialization
   'modern_industrialization:raw_lead',
   'modern_industrialization:raw_silver',
@@ -85,13 +89,16 @@ WANT_ITEM_ID = {
   'modern_industrialization:raw_antimony',
   'modern_industrialization:raw_nickel',
   'modern_industrialization:lignite_coal',
+  
   -- techreborn
   'techreborn:sapphire_gem',
   'techreborn:ruby_gem',
   'techreborn:peridot_gem',
   'techreborn:galena_ore',
+  
   -- applied energistics 2
   'appliedenergistics2:certus_quartz_dust',
+  
   -- industrial revolution
   'indrev:nikolite_dust',
   'indrev:sulfur_crystal'
