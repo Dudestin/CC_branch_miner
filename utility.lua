@@ -99,3 +99,14 @@ function inspect_pos(dir)
   end
   return {name = "NO_BLOCK"}
 end
+
+function drop_trash()
+  for i=1, 16 do
+    turtle.select(i)
+    t
+  end
+end
+
+function try_refuel()
+  
+end
