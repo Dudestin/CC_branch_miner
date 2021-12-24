@@ -75,7 +75,7 @@ WANT_ITEM_ID = {
   'modern_industrialization:raw_tin',
   'modern_industrialization:raw_tungsten',
   'modern_industrialization:raw_uranium',
-  'modern_industrialization:raw_titanium'
+  'modern_industrialization:raw_titanium',
   'modern_industrialization:bauxite_dust',
   'modern_industrialization:raw_platinum',
   'modern_industrialization:mozanite_dust',
