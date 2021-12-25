@@ -133,7 +133,7 @@ function unload_cargo()
     turtle.select(i)
     if turtle.getItemDetail() then
       print(turtle.getItemDetail().name)
-      turtle.dropDown(i)
+      turtle.dropDown()
     end
   end
 end
