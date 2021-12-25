@@ -1,4 +1,4 @@
 dofile('branch_miner/routing.lua')
 
 -- main routine
-route_mine()
+route_side_mine()

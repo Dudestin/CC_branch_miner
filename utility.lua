@@ -124,3 +124,19 @@ function try_refuel()
     end
   end
 end
+
+function unload_cargo()
+  for i=1, 16 do
+    turtle.select(i)
+    if turtle.getItemDetail() then
+      turtle.dropDown(i)
+    end
+  end
+end
+
+function forward_N(count)
+  for i=1, count do
+    dig_until_empty()
+    turtle.forward(i)
+  end
+end
