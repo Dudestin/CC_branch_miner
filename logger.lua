@@ -1,8 +1,10 @@
 dofile('branch_miner/config.lua')
 
-if not rednet.isOpen() then
-  rednet.open('right')
+if rednet.isOpen() then
+  rednet.close()
 end
+
+rednet.open('right')
 
 function log_net(args)
   rednet.send(HOST_PORT, args)
