@@ -1,6 +1,7 @@
 dofile('branch_miner/utility.lua')
 dofile('branch_miner/track_vein.lua')
 dofile('branch_miner/config.lua')
+dofile('branch_miner/logger.lua')
 
 -- define side-mine routing
 function route_side_mine()
@@ -10,6 +11,7 @@ function route_side_mine()
         try_refuel()
         drop_trash()
       end
+      log_net('now line-mining at ' .. i ..  '/' .. len)
       dig_until_empty()
       turtle.forward()
       track_vein(0)
@@ -26,7 +28,7 @@ end
 -- define main-mine routing 
 function route_main_mine()
   for i=RT_PARAM['OFFSET'], RT_PARAM['N']-1 do
-    print("mining " .. i .. 'th' .. 'side-mine')
+    log_net("mining " .. i .. 'th' .. 'side-mine')
     local row = math.floor(i / 2) + 1
     local outer_pos = row * 6 -- dept. position
     local inner_pos = outer_pos - 3 -- arrival position
@@ -46,6 +48,7 @@ function route_main_mine()
     end
     
     -- unload all items 
+    log_net('finished sub-mine mining')
     unload_cargo()
     redstone.setOutput('bottom', true) 
     sleep(1)
