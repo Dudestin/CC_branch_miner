@@ -1,5 +1,5 @@
-RT_PARAM = {L = 80, W = 2, N = 20, OFFSET = 0}
-REFUEL_THRESHOLD = 1000
+RT_PARAM = {L = 80, W = 2, N = 100, OFFSET = 0}
+REFUEL_THRESHOLD = 2000
 
 WANT_BLOCK_ID = {
   -- vannila
