@@ -29,7 +29,7 @@ function route_main_mine()
     print("mining " .. i .. 'th' .. 'side-mine')
     local row = math.floor(i / 2) + 1
     local outer_pos = row * 6 -- dept. position
-    local inner_pos = outbount_pos - 3 -- arrival position
+    local inner_pos = outer - 3 -- arrival position
     
     if (i % 2 == 0) then -- right-side
       forward_N(outer_pos) -- TOOD
