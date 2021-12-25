@@ -15,7 +15,7 @@ $ ./main.lua [L] [W] [N]
 - `OFFSET` : already finished sub-mines, turtle will skip this count of N at beginning.
 # files
 ## `config.lua`
-- `RT_PARAM` : *table*, routing parameters. `L` : base-mine length, `W` : round-trip interval
+- `RT_PARAM` : *table*, routing parameters. `L` : base-mine length, `W` : round-trip interval, `N` : number of side-mines, `OFFSET` : start side-mines offset
 - `REFUEL_THRESHOLD` : *integer*, turtle will refuel when fuel-level is less than this value. 
 - `WANT_BLOCK_ID`  : *table*, specify want to dig block
 - `WANT_ITEM_ID`   : *table*, specify want item id, turtle will drop any item without these.

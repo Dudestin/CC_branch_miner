@@ -32,7 +32,7 @@ function route_main_mine()
     local inner_pos = outer_pos - 3 -- arrival position
     
     if (i % 2 == 0) then -- right-side
-      forward_N(outer_pos) -- TOOD
+      forward_N(outer_pos)
       turtle.turnRight()
       route_side_mine()
       turtle.turnLeft()
