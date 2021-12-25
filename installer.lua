@@ -19,6 +19,7 @@ local filenames = {
   'config.lua',
   'track_vein.lua',
   'routing.lua',
+  'logger.lua',
   'main.lua'
 }
 
