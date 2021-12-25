@@ -45,6 +45,7 @@ WANT_BLOCK_ID = {
   'modern_industrialization:mozanite_ore',
   'modern_industrialization:antimony_ore',
   'modern_industrialization:nickel_ore',
+  'modern_industrialization:iridium_ore',
   -- 'modern_industrialization:lignite_coal_ore',
   'modern_industrialization:deepslate_lead_ore',
   'modern_industrialization:deepslate_silver_ore',
@@ -56,7 +57,8 @@ WANT_BLOCK_ID = {
   'modern_industrialization:deepslate_platinum_ore',
   'modern_industrialization:deepslate_mozanite_ore',
   'modern_industrialization:deepslate_antimony_ore',
-  'modern_industrialization:deepslate_nickel_ore'
+  'modern_industrialization:deepslate_nickel_ore',
+  'modern_industrialization:deepslate_iridium_ore'
   -- 'modern_industrialization:deepslate_lignite_coal_ore'
 }
 
@@ -83,6 +85,7 @@ WANT_ITEM_ID = {
   'modern_industrialization:mozanite_dust',
   'modern_industrialization:raw_antimony',
   'modern_industrialization:raw_nickel',
+  'modern_industrialization:raw_iridium',
   -- 'modern_industrialization:lignite_coal',
   -- techreborn
   'techreborn:sapphire_gem',
