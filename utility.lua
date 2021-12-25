@@ -105,6 +105,7 @@ function drop_trash()
     turtle.select(i)
     if turtle.getItemDetail() then
       if not(is_in_table(WANT_ITEM_ID, turtle.getItemDetail().name)) then -- if "trash"
+        print("drop trash : " .. turtle.getItemDetail().name)
         turtle.drop()
       end
     end
@@ -120,15 +121,18 @@ function try_refuel()
     if turtle.getItemDetail() then
       if is_in_table(FUEL_ITEM_ID, turtle.getItemDetail().name) then
         turtle.refuel()
+        print("refueled, now fuel-level is " .. turtle.getFuelLevel())
       end
     end
   end
 end
 
 function unload_cargo()
+  print("Unload All Items")
   for i=1, 16 do
     turtle.select(i)
     if turtle.getItemDetail() then
+      print(turtle.getItemDetail().name)
       turtle.dropDown(i)
     end
   end
