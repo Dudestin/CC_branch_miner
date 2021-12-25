@@ -18,7 +18,7 @@ function route_mine()
   
   route_line(RT_PARAM['L']) -- outbound
   turtle.turnRight()
-  route_line(RT_PARAM['W'] + 2)
+  route_line(RT_PARAM['W'] + 1)
   turtle.turnRight()
   route_line(RT_PARAM['L']) -- inbound
 end

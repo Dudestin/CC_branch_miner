@@ -1,4 +1,4 @@
-RT_PARAM = {L = 80, W = 1, N = 20}
+RT_PARAM = {L = 80, W = 2, N = 20}
 REFUEL_THRESHOLD = 1000
 
 WANT_BLOCK_ID = {
