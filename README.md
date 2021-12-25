@@ -12,7 +12,7 @@ $ ./main.lua [L] [W] [N]
 - `L` : length of the side-mine, *default : 80*
 - `W` : interval of side-mine, *default : 2*
 - `N` : number of side-mine, must be an **even number**,  *default : 20*,
-- `OFFSET` : already finished sub-mines, turtle will skip this count of N at beginning.
+- `OFFSET` : already finished sub-mines, turtle will skip this count of N at beginning, *default : 0*
 # files
 ## `config.lua`
 - `RT_PARAM` : *table*, routing parameters. `L` : base-mine length, `W` : round-trip interval, `N` : number of side-mines, `OFFSET` : start side-mines offset
