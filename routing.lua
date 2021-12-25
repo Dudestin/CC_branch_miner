@@ -25,7 +25,7 @@ end
 
 -- define main-mine routing 
 function route_main_mine()
-  for i=0, RT_PARAM['N']-1 do
+  for i=RT_PARAM['OFFSET'], RT_PARAM['N']-1 do
     print("mining " .. i .. 'th' .. 'side-mine')
     local row = math.floor(i / 2) + 1
     local outer_pos = row * 6 -- dept. position
