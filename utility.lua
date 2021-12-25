@@ -140,6 +140,7 @@ end
 
 function forward_N(count)
   for i=1, count do
+    dig_until_empty()
     turtle.forward()
   end
 end
