@@ -48,7 +48,7 @@ function route_main_mine()
       forward_N(3)
       turtle.select(CHUNK_LOADER_SLOT)
       turtle.digDown() -- get chunk loader
-      forward_N(inner_pos - 6)
+      forward_N(inner_pos - 3)
     else -- left-side
       forward_N(inner_pos)
       turtle.turnLeft()
