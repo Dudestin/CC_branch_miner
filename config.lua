@@ -112,3 +112,5 @@ TRANSPARENT_BLOCK_ID = {
   'minecraft:lava',
   'NO_BLOCK'
 }
+
+CHUNK_LOADER_ITEM_ID = 'kibe:chunk_loader'
