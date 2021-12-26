@@ -19,6 +19,7 @@ function route_side_mine()
   end
   
   route_line(RT_PARAM['L']) -- outbound
+  -- TODO : place Chunk Loader
   turtle.turnRight()
   route_line(RT_PARAM['W'] + 1)
   turtle.turnRight()
@@ -35,9 +36,11 @@ function route_main_mine()
     
     if (i % 2 == 0) then -- right-side
       forward_N(outer_pos)
+      -- TODO : palace chunk loader
       turtle.turnRight()
       route_side_mine()
       turtle.turnLeft()
+      -- TODO : dig & get chunk loader
       forward_N(inner_pos)
     else -- left-side
       forward_N(inner_pos)
