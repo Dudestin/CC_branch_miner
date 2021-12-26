@@ -98,7 +98,9 @@ WANT_ITEM_ID = {
   'appliedenergistics2:certus_quartz_dust',
   -- industrial revolution
   'indrev:nikolite_dust',
-  'indrev:sulfur_crystal'
+  'indrev:sulfur_crystal',
+  -- chunk loader
+  'kibe:chunk_loader'
 }
 
 FUEL_ITEM_ID = {

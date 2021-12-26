@@ -131,10 +131,10 @@ function unload_cargo()
   print("Unload All Items")
   for i=1, 16 do
     turtle.select(i)
-    a, b = turtle.getItemDetail()
-    if a then -- is slot occupied?
-      if b.name ~= CHUNK_LOADER_ITEM_ID then -- is not chunk loader
-        print(turtle.getItemDetail().name)
+    item_table = turtle.getItemDetail()
+    if item_table then -- is slot occupied?
+      if item_table.name ~= CHUNK_LOADER_ITEM_ID then -- is not chunk loader
+        print(item_table.name)
         turtle.dropDown()
       end
     end
