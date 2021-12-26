@@ -7,8 +7,10 @@ dofile('branch_miner/config.lua')
 function inv_iter(name)
   for i=1, 16 do 
     item = turtle.getItemDetail(i)
-    if (item.name == name) then
-      coroutine.yield(i)
+    if item then
+      if item.name == name then
+        coroutine.yield(i)
+      end
     end
   end
 end
