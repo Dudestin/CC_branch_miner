@@ -1,20 +1,6 @@
 Stack = dofile('branch_miner/stack.lua')
 dofile('branch_miner/config.lua')
 
--- inventory iterator
--- return match name slot id
--- usage : for k,v in coroutine.wrap(inv_iter(hoge))
-function inv_iter(name)
-  for i=1, 16 do 
-    item = turtle.getItemDetail(i)
-    if item then
-      if item.name == name then
-        coroutine.yield(i)
-      end
-    end
-  end
-end
-
 function is_in_table(table, value)
   for k, v in pairs(table) do
     if v == value then
