@@ -37,16 +37,17 @@ function route_main_mine()
     if (i % 2 == 0) then -- right-side
       forward_N(outer_pos)
       -- palace chunk loader
-      turtle.select(CHUNK_LOADER_SLOT)  -- 16 : chunk loader slot
+      -- select chunk loader slot
+      for k,v in coroutine.wrap(inv_iter(CHUNK_LOADER_ITEM_ID)) do
+        turtle.select(k)
+      end
       turtle.digDown()
       turtle.placeDown() -- place chunk loader
-      turtle.select(1)
       turtle.turnRight()
       route_side_mine()
       turtle.turnLeft()
       -- dig & get chunk loader
       forward_N(3)
-      turtle.select(CHUNK_LOADER_SLOT)
       turtle.digDown() -- get chunk loader
       forward_N(inner_pos - 3)
     else -- left-side
