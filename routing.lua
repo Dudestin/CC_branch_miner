@@ -19,7 +19,6 @@ function route_side_mine()
   end
   
   route_line(RT_PARAM['L']) -- outbound
-  -- TODO : place Chunk Loader
   turtle.turnRight()
   route_line(RT_PARAM['W'] + 1)
   turtle.turnRight()
@@ -39,7 +38,9 @@ function route_main_mine()
       forward_N(outer_pos)
       -- palace chunk loader
       turtle.select(CHUNK_LOADER_SLOT)  -- 16 : chunk loader slot
+      turtle.digDown()
       turtle.placeDown() -- place chunk loader
+      turtle.select(1)
       turtle.turnRight()
       route_side_mine()
       turtle.turnLeft()
