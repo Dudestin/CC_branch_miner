@@ -29,6 +29,7 @@ end
 -- define main-mine routing 
 function route_main_mine()
   for i=RT_PARAM['OFFSET'], RT_PARAM['N']-1 do
+    turtle.select(1)
     log_net("mining " .. i .. 'th' .. 'side-mine')
     local row = math.floor(i / 2) + 1
     local outer_pos = row * 6 -- dept. position
@@ -36,12 +37,17 @@ function route_main_mine()
     
     if (i % 2 == 0) then -- right-side
       forward_N(outer_pos)
-      -- TODO : palace chunk loader
+      -- palace chunk loader
+      turtle.select(CHUNK_LOADER_SLOT)  -- 16 : chunk loader slot
+      turtle.placeDown() -- place chunk loader
       turtle.turnRight()
       route_side_mine()
       turtle.turnLeft()
-      -- TODO : dig & get chunk loader
-      forward_N(inner_pos)
+      -- dig & get chunk loader
+      forward_N(6)
+      turtle.select(CHUNK_LOADER_SLOT)
+      turtle.digDown() -- get chunk loader
+      forward_N(inner_pos - 6)
     else -- left-side
       forward_N(inner_pos)
       turtle.turnLeft()
