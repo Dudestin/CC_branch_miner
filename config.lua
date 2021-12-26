@@ -86,7 +86,7 @@ WANT_ITEM_ID = {
   'modern_industrialization:mozanite_dust',
   'modern_industrialization:raw_antimony',
   'modern_industrialization:raw_nickel',
-  'modern_industrialization:raw_iridium',
+  'modern_industrialization:iridium_dust',
   -- 'modern_industrialization:lignite_coal',
   -- techreborn
   'techreborn:sapphire_gem',
