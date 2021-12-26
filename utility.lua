@@ -6,7 +6,8 @@ dofile('branch_miner/config.lua')
 -- usage : for k,v in coroutine.wrap(inv_iter(hoge))
 function inv_iter(name)
   for i=1, 16 do 
-    if (turtle.getItemDetail(i).name == name) then
+    item = turtle.getItemDetail(i)
+    if (item.name == name) then
       coroutine.yield(i)
     end
   end
