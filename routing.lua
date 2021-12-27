@@ -37,7 +37,16 @@ function route_main_mine()
     if (i % 2 == 0) then -- right-side
       forward_N(outer_pos)
       -- palace chunk loader
-      -- TODO : select chunk loader slot
+      -- select chunk loader slot
+      for i=1, 16 do 
+        item = turtle.getItemDetail(i)
+        if item then
+          if item.name == CHUNK_LOADER_ITEM_ID then
+            turtle.select(i)
+            break
+          end
+        end
+      end
       turtle.digDown()
       turtle.placeDown() -- place chunk loader
       turtle.turnRight()
