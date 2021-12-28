@@ -8,7 +8,6 @@ function route_side_mine()
   local function route_line(len)
     for i=1, len do
       if (i % 20 == 0) then
-        try_refuel()
         drop_trash()
       end
       log_net('now line-mining at ' .. i ..  '/' .. len)
@@ -50,6 +49,7 @@ function route_main_mine()
     
     -- unload all items 
     log_net('finished sub-mine mining')
+    try_refuel()
     unload_cargo()
     redstone.setOutput('bottom', true) 
     sleep(1)
