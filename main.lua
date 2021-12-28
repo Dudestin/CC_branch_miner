@@ -11,4 +11,4 @@ end
 
 -- main routine
 log_net("Start Auto Branch-Mining")
-route_main_mine()
+route_base_mine()

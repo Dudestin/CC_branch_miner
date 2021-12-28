@@ -25,7 +25,7 @@ function route_side_mine()
 end
 
 -- define base-mine routing 
-function route_main_mine()
+function route_base_mine()
   for i=RT_PARAM['OFFSET'], RT_PARAM['N']-1 do
     turtle.select(1)
     log_net("mining " .. i .. 'th' .. 'side-mine')
