@@ -91,7 +91,7 @@ end
 
 function drop_trash()
   for i=1, 16 do
-    item_table = turtle.getItemDetail(i)
+    local item_table = turtle.getItemDetail(i)
     if item_table then
       if not(is_in_table(WANT_ITEM_ID, item_table.name)) then -- if "trash"
         log_net("drop trash : " .. item_table.name)
@@ -107,7 +107,7 @@ function try_refuel()
     if turtle.getFuelLevel() >= REFUEL_THRESHOLD then
       break
     end
-    item_table = turtle.getItemDetail(i)
+    local item_table = turtle.getItemDetail(i)
     if item_table then
       if is_in_table(FUEL_ITEM_ID, item_table.name) then
         turtle.select(i)
@@ -121,7 +121,7 @@ end
 function unload_cargo()
   log_net("unload items")
   for i=1, 16 do
-    item_table = turtle.getItemDetail(i)
+    local item_table = turtle.getItemDetail(i)
     if item_table then -- is slot occupied?
       if item_table.name ~= CHUNK_LOADER_ITEM_ID then -- is not chunk loader
         log_net(item_table.name)
