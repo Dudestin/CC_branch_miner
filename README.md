@@ -16,7 +16,7 @@ $ ./main.lua [L] [W] [N] [OFFSET]
 # files
 ## `config.lua`
 - `RT_PARAM` : *table*, routing parameters. `L` : base-mine length, `W` : round-trip interval, `N` : number of side-mines, `OFFSET` : start side-mines offset
-- `HOST_PORT` : turtle will send log data to specified port.
+- `HOST_PORT` : *integer 1~65536*, turtle will send log data to specified port.
 - `REFUEL_THRESHOLD` : *integer*, turtle will refuel when fuel-level is less than this value. 
 - `WANT_BLOCK_ID`  : *table*, specify want to dig block
 - `WANT_ITEM_ID`   : *table*, specify want item id, turtle will drop any item without these.
