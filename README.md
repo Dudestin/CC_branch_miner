@@ -7,7 +7,7 @@ files will be installed within `/branch_miner`
 
 # how to use
 ```sh
-$ ./main.lua [L] [W] [N]
+$ ./main.lua [L] [W] [N] [OFFSET]
 ```
 - `L` : length of the side-mine, *default : 80*
 - `W` : interval of side-mine, *default : 2*

@@ -106,9 +106,8 @@ function try_refuel()
     if turtle.getFuelLevel() >= REFUEL_THRESHOLD then
       break
     end
-    turtle.select(i)
-    if turtle.getItemDetail() then
-      if is_in_table(FUEL_ITEM_ID, turtle.getItemDetail().name) then
+    if turtle.getItemDetail(i) then
+      if is_in_table(FUEL_ITEM_ID, turtle.getItemDetail(i).name) then
         turtle.refuel()
         print("refueled, now fuel-level is " .. turtle.getFuelLevel())
       end
