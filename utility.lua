@@ -1,5 +1,6 @@
 Stack = dofile('branch_miner/stack.lua')
 dofile('branch_miner/config.lua')
+dofile('branch_miner/logger.lua')
 
 function is_in_table(table, value)
   for k, v in pairs(table) do
