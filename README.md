@@ -11,7 +11,7 @@ $ ./main.lua [L] [W] [N] [OFFSET]
 ```
 - `L` : length of the side-mine, *default : 80*
 - `W` : interval of side-mine, *default : 2*
-- `N` : number of side-mine, must be an **even number**,  *default : 20*,
+- `N` : number of side-mine, *default : 20*,
 - `OFFSET` : already finished sub-mines, turtle will skip this count of N at beginning, *default : 0*
 # files
 ## `config.lua`
