@@ -24,7 +24,7 @@ function route_side_mine()
   route_line(RT_PARAM['L']) -- inbound
 end
 
--- define main-mine routing 
+-- define base-mine routing 
 function route_main_mine()
   for i=RT_PARAM['OFFSET'], RT_PARAM['N']-1 do
     turtle.select(1)
