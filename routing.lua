@@ -30,7 +30,7 @@ function route_base_mine()
     turtle.select(1)
     log_net("mining " .. i .. 'th' .. 'side-mine')
     local row = math.floor(i / 2) + 1
-    local outer_pos = row * 6 -- dept. position
+    local outer_pos = row * 6 -- departure position
     local inner_pos = outer_pos - 3 -- arrival position
     
     if (i % 2 == 0) then -- right-side
@@ -51,9 +51,6 @@ function route_base_mine()
     log_net('finished sub-mine mining')
     try_refuel()
     unload_cargo()
-    redstone.setOutput('bottom', true) 
-    sleep(1)
-    redstone.setOutput('bottom', false)
     
     turtle.turnRight()
     turtle.turnRight()
