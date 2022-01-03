@@ -5,26 +5,29 @@ REFUEL_THRESHOLD = 8000
 CHUNK_LOADER_ITEM_ID = 'kibe:chunk_loader'
 
 WANT_BLOCK_ID = {
-  -- vannila
+  -- vanilla
   'minecraft:gold_ore',
   'minecraft:iron_ore',
-  -- 'minecraft:copper_ore',
+  'minecraft:copper_ore',
   'minecraft:coal_ore',
   'minecraft:lapis_ore',
   'minecraft:diamond_ore',
   'minecraft:redstone_ore',
   'minecraft:lit_redstone_ore',
   'minecraft:emerald_ore',
-  'minecraft:quartz_ore',
   'minecraft:deepslate_gold_ore',
   'minecraft:deepslate_iron_ore',
-  -- 'minecraft:deepslate_copper_ore',
+  'minecraft:deepslate_copper_ore',
   'minecraft:deepslate_coal_ore',
   'minecraft:deepslate_lapis_ore',
   'minecraft:deepslate_diamond_ore',
   'minecraft:deepslate_redstone_ore',
   'minecraft:deepslate_lit_redstone_ore',
   'minecraft:deepslate_emerald_ore',
+  -- vanilla-nether
+  'minecraft:nether_gold_ore',
+  'minecraft:nether_quartz_ore',
+  'minecraft:ancient_debris',
   -- applied energistics
   'appliedenergistics2:quartz_ore',
   'appliedenergistics2:deepslate_quartz_ore',
@@ -32,7 +35,7 @@ WANT_BLOCK_ID = {
   'techreborn:sapphire_ore',
   'techreborn:ruby_ore',
   'techreborn:peridot_ore',
-  -- 'techreborn:galena_ore',
+  'techreborn:galena_ore',
   -- industrial revolution
   'indrev:nikolite_ore',
   'indrev:deepslate_nikolite_ore',
@@ -49,7 +52,7 @@ WANT_BLOCK_ID = {
   'modern_industrialization:antimony_ore',
   'modern_industrialization:nickel_ore',
   'modern_industrialization:iridium_ore',
-  -- 'modern_industrialization:lignite_coal_ore',
+  'modern_industrialization:lignite_coal_ore',
   'modern_industrialization:deepslate_lead_ore',
   'modern_industrialization:deepslate_silver_ore',
   'modern_industrialization:deepslate_tin_ore',
@@ -62,7 +65,7 @@ WANT_BLOCK_ID = {
   'modern_industrialization:deepslate_antimony_ore',
   'modern_industrialization:deepslate_nickel_ore',
   'modern_industrialization:deepslate_iridium_ore'
-  -- 'modern_industrialization:deepslate_lignite_coal_ore'
+  'modern_industrialization:deepslate_lignite_coal_ore'
 }
 
 WANT_ITEM_ID = {
@@ -70,12 +73,16 @@ WANT_ITEM_ID = {
   'minecraft:diamond',
   'minecraft:raw_gold',
   'minecraft:raw_iron',
-  -- 'minecraft:raw_copper',
+  'minecraft:raw_copper',
   'minecraft:redstone',
   'minecraft:lapis_lazuli',
   'minecraft:coal',
   'minecraft:emerald',
   'minecraft:bucket', -- empty bucket
+   -- vanilla-nethernether
+  'minecraft:nether_gold_ore',
+  'minecraft:nether_quartz_ore',
+  'minecraft:ancient_debris',
   -- modern industrialization
   'modern_industrialization:raw_lead',
   'modern_industrialization:raw_silver',
@@ -89,12 +96,12 @@ WANT_ITEM_ID = {
   'modern_industrialization:raw_antimony',
   'modern_industrialization:raw_nickel',
   'modern_industrialization:raw_iridium',
-  -- 'modern_industrialization:lignite_coal',
+  'modern_industrialization:lignite_coal',
   -- techreborn
   'techreborn:sapphire_gem',
   'techreborn:ruby_gem',
   'techreborn:peridot_gem',
-  -- 'techreborn:galena_ore',
+  'techreborn:galena_ore',
   -- applied energistics 2
   'appliedenergistics2:certus_quartz_dust',
   -- industrial revolution
