@@ -1,4 +1,4 @@
-あとは普通にローカルcommitしてmasterにpushすれば反映されます。 master以外のremote branchを作った場合はブラウdofile('branch_miner/utility.lua')
+dofile('branch_miner/utility.lua')
 dofile('branch_miner/config.lua')
 
 function make_tracklist(level)
