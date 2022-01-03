@@ -64,7 +64,7 @@ WANT_BLOCK_ID = {
   'modern_industrialization:deepslate_mozanite_ore',
   'modern_industrialization:deepslate_antimony_ore',
   'modern_industrialization:deepslate_nickel_ore',
-  'modern_industrialization:deepslate_iridium_ore'
+  'modern_industrialization:deepslate_iridium_ore',
   'modern_industrialization:deepslate_lignite_coal_ore'
 }
 
