@@ -2,7 +2,9 @@ RT_PARAM = {L = 80, W = 2, N = 10000, OFFSET = 0}
 HOST_PORT = 8
 PARENT_TURTLE_PORT = 10
 REFUEL_THRESHOLD = 8000
+
 CHUNK_LOADER_ITEM_ID = 'kibe:chunk_loader'
+ENTANGLED_CHEST_ITEM_ID = 'kibe:entangled_chest'
 
 WANT_BLOCK_ID = {
   -- vanilla
