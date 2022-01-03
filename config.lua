@@ -3,6 +3,8 @@ HOST_PORT = 8
 PARENT_TURTLE_PORT = 10
 REFUEL_THRESHOLD = 8000
 
+EMPTY_BUCKET_ITEM_ID = 'minecraft:bucket'
+LAVA_BUCKET_ITEM_ID  = 'minecraft:lava_bucket'
 CHUNK_LOADER_ITEM_ID = 'kibe:chunk_loader'
 ENTANGLED_CHEST_ITEM_ID = 'kibe:entangled_chest'
 
@@ -80,7 +82,6 @@ WANT_ITEM_ID = {
   'minecraft:lapis_lazuli',
   'minecraft:coal',
   'minecraft:emerald',
-  'minecraft:bucket', -- empty bucket
    -- vanilla-nethernether
   'minecraft:nether_gold_ore',
   'minecraft:nether_quartz_ore',
@@ -109,8 +110,10 @@ WANT_ITEM_ID = {
   -- industrial revolution
   'indrev:nikolite_dust',
   'indrev:sulfur_crystal',
-  -- chunk loader
-  CHUNK_LOADER_ITEM_ID
+  -- etc.
+  CHUNK_LOADER_ITEM_ID,
+  LAVA_BUCKET_ITEM_ID,
+  EMPTY_BUCKET_ITEM_ID
 }
 
 FUEL_ITEM_ID = {
