@@ -2,6 +2,7 @@ RT_PARAM = {L = 80, W = 2, N = 10000, OFFSET = 0}
 HOST_PORT = 8
 PARENT_TURTLE_PORT = 10
 REFUEL_THRESHOLD = 8000
+CHUNK_LOADER_ITEM_ID = 'kibe:chunk_loader'
 
 WANT_BLOCK_ID = {
   -- vannila
@@ -74,7 +75,7 @@ WANT_ITEM_ID = {
   'minecraft:lapis_lazuli',
   'minecraft:coal',
   'minecraft:emerald',
-  'minecraft:bucket',
+  'minecraft:bucket', -- empty bucket
   -- modern industrialization
   'modern_industrialization:raw_lead',
   'modern_industrialization:raw_silver',
@@ -100,7 +101,7 @@ WANT_ITEM_ID = {
   'indrev:nikolite_dust',
   'indrev:sulfur_crystal',
   -- chunk loader
-  'kibe:chunk_loader'
+  CHUNK_LOADER_ITEM_ID
 }
 
 FUEL_ITEM_ID = {
@@ -114,5 +115,3 @@ TRANSPARENT_BLOCK_ID = {
   'minecraft:lava',
   'NO_BLOCK'
 }
-
-CHUNK_LOADER_ITEM_ID = 'kibe:chunk_loader'
