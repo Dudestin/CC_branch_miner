@@ -111,9 +111,9 @@ WANT_ITEM_ID = {
   'indrev:nikolite_dust',
   'indrev:sulfur_crystal',
   -- etc.
-  CHUNK_LOADER_ITEM_ID,
-  LAVA_BUCKET_ITEM_ID,
-  EMPTY_BUCKET_ITEM_ID
+  CHUNK_LOADER_ITEM_ID,  -- do not delete
+  LAVA_BUCKET_ITEM_ID,   -- do not delete
+  EMPTY_BUCKET_ITEM_ID   -- do not delete
 }
 
 FUEL_ITEM_ID = {
