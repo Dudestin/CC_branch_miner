@@ -73,7 +73,7 @@ WANT_BLOCK_ID = {
 }
 
 WANT_ITEM_ID = {
-  -- vannila
+  -- vanilla
   'minecraft:diamond',
   'minecraft:raw_gold',
   'minecraft:raw_iron',
@@ -82,7 +82,7 @@ WANT_ITEM_ID = {
   'minecraft:lapis_lazuli',
   'minecraft:coal',
   'minecraft:emerald',
-   -- vanilla-nethernether
+   -- vanilla-nether
   'minecraft:nether_gold_ore',
   'minecraft:nether_quartz_ore',
   'minecraft:ancient_debris',
@@ -113,7 +113,8 @@ WANT_ITEM_ID = {
   -- etc.
   CHUNK_LOADER_ITEM_ID,  -- do not delete
   LAVA_BUCKET_ITEM_ID,   -- do not delete
-  EMPTY_BUCKET_ITEM_ID   -- do not delete
+  EMPTY_BUCKET_ITEM_ID,  -- do not delete
+  ENTANGLED_CHEST_ITEM_ID
 }
 
 FUEL_ITEM_ID = {
