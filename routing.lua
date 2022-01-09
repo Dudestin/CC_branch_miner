@@ -7,13 +7,11 @@ dofile('branch_miner/logger.lua')
 function route_side_mine()
   local function route_line(len)
     for i=1, len do
-      if (i % 20 == 0) then
-        drop_trash()
-      end
       log_net('now line-mining at ' .. i ..  '/' .. len)
       dig_until_empty()
       turtle.forward()
       track_vein(0)
+      drop_trash()
     end
   end
   
